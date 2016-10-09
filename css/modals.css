@@ -1,0 +1,182 @@
+/* CSS file about bootstrap modal section */
+
+/*general modal info*/
+.modal-window {
+    height: 34vw;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    top: 120px;
+    margin: 0;
+    overflow: hidden;
+    background: #fff;
+}
+
+/*carousel slide*/
+.gallery {
+    top: 50%;
+    transform: translate(0,-50%);
+    z-index: -1;
+}
+
+.gallery ul li.active span {
+    background: #41969c;
+}
+
+.gallery ul li:hover span {
+    background: #41969c;
+}
+
+.gallery ul li span {
+    width: 15px;
+    height: 15px;
+    display: block;
+    background: #dfdfdf;
+    border-radius: 8px;
+}
+
+.gallery ul li {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/*close button*/
+.close {
+    font-size: 48px;
+    color: #41969c;
+    margin-right: 50px;
+}
+
+/* override default bootstrap indicators */
+.carousel-indicators {
+    bottom: 10px;
+    width: 60%;
+    padding-left: 0;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+}
+
+.carousel-indicators .active {
+    background-color: transparent;
+}
+
+/* wrapper for slides */
+.carousel-inner>.item>a>img,.carousel-inner>.item>img,.img-responsive,.thumbnail a>img,.thumbnail>img {
+    display: block;
+    max-width: 95%;
+    height: auto;
+}
+
+.item img {
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-width: 0;
+    border-style: initial;
+    border-color: initial;
+    max-height: 500px;
+    margin: auto;
+}
+
+/* Left and right controls */
+.carousel-control.right {
+    background-image: none;
+    width: 50%;
+}
+
+.carousel-control.left {
+    background-image: none;
+    width: 50%;
+}
+
+/* tagging column */
+.date {
+    float: right;
+}
+
+.modal-body {
+    margin-right: 30%;
+    margin-left: 10%;
+}
+
+.sep {
+    height: 2px;
+    background: #41969c;
+    margin-left: -20px;
+}
+
+.tit {
+    color: #161616;
+    font-size: 1.25em;
+    padding: 10px 0 5px;
+    font-weight: 700;
+}
+
+
+/* @media section */
+
+@media(max-width: 991px) {
+
+    /*general modal info*/
+    .modal-window {
+        overflow-y: scroll;
+        height: 75vh;
+        top: 10vh;
+    }
+
+    /*carousel slide*/
+    .gallery {
+        top: 20px;
+        transform: none;
+        margin-right: 15px;
+    }
+
+    /* override default bootstrap indicators */
+    .carousel-indicators {
+        bottom: 0;
+    }
+
+    /* wrapper for slides */
+    .item img {
+        padding-left: 0;
+    }
+
+    /* tagging column */
+    .modal-body {
+        margin-right: 10%;
+        margin-top: 20px;
+    }
+
+    .sep {
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 767px) {
+
+    /*general modal info*/
+    .modal-window {
+        height: 45vw;
+    }
+}
+
+@media(max-width: 567px) {
+
+    /*general modal info*/
+    .modal-window {
+        height: 80vw;
+    }
+}
