@@ -90,6 +90,7 @@ nav.navbar-default {
     width: 90px;
     text-align: center;
     margin-left: 10px;
+    border-radius: 0 0 3px 4px;
     box-shadow: 1px 1px 5px -1px #555;
     z-index: 70;
 }
