@@ -367,7 +367,12 @@ img.responsive-shrink {
 
 img.social-responsive:hover {
     color: #80CEB9;
+    filter: blur(3px);
     -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
 }
 
 
