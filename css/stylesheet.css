@@ -23,6 +23,11 @@ a {
     background: transparent;
 }
 
+a:focus {
+    outline: none;
+    outline-offset: 0;
+}
+
 li,ul {
     list-style: none;
 }
