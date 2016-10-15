@@ -32,16 +32,14 @@ $(document).ready(function($){
 
         this.checkElements = function(){
             // Set some vars to check with
-            var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html' ||
-                              (navigator.userAgent.toLowerCase().indexOf('windows phone') != -1) ? 'body' : 'html' ),
+            var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html'),
                 viewportTop = $(scrollElem).scrollTop(),
                 viewportBottom = (viewportTop + windowHeight);
 
             $elem.each(function(){
                 var $obj = $(this);
                 // If class already exists; quit
-                //if ($obj.hasClass(options.classToAdd)) {
-                if ($obj.hasClass("visible")) {
+                if ($obj.hasClass(options.classToAdd)){
                     return;
                 }
 
@@ -52,9 +50,6 @@ $(document).ready(function($){
                 // Add class if in viewport
                 if ((elemTop < viewportBottom) && (elemBottom > viewportTop)){
                     $obj.addClass(options.classToAdd);
-                    $obj.one("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function () {
-                      $obj.removeClass("animated bounceInUp");
-                    });
 
                     // Do the callback function. Callback wil send the jQuery object as parameter
                     options.callbackFunction($obj);
@@ -71,5 +66,4 @@ $(document).ready(function($){
             windowHeight = e.currentTarget.innerHeight;
         });
     };
-    
 });

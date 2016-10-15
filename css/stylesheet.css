@@ -1,4 +1,5 @@
 /* general */
+
 body {
     background-color: #FFF;
     font-family: 'Raleway',sans-serif;
@@ -135,6 +136,7 @@ nav.navbar-default {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    -ms-background-size: cover;
     background-size: cover;
     left: 0;
     z-index: -10;
