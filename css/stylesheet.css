@@ -194,8 +194,8 @@ nav.navbar-default {
 }
 
 .about_p {
-    padding: 50px 120px;
-    font-size: 20px;
+    padding: 10vh 120px;
+    font-size: 22px;
 }
 
 .logos {
@@ -205,7 +205,7 @@ nav.navbar-default {
 
 .skills {
     padding: 0 30px 30px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .hidden_animate {
@@ -397,6 +397,10 @@ img.social-responsive:hover {
     /* about page */
     .about_p {
         padding: 40px 0;
+    }
+
+    .skills {
+        font-size: 16px;
     }
 
     /* work page */
