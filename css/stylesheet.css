@@ -161,6 +161,7 @@ nav.navbar-default {
     width: 100%;
     display: inline-block;
     vertical-align: middle;
+    margin-bottom: 20px;
 }
 
 .line {
@@ -194,7 +195,7 @@ nav.navbar-default {
 }
 
 .about_p {
-    padding: 10vh 120px;
+    padding: 9vh 120px;
     font-size: 22px;
 }
 
