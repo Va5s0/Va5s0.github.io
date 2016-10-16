@@ -51,7 +51,7 @@
 /* override default bootstrap indicators */
 .carousel-indicators {
     bottom: 10px;
-    width: 60%;
+    width: 55%;
     padding-left: 0;
 }
 
@@ -108,11 +108,15 @@
 }
 
 .modal-body {
-    margin-right: 30%;
-    margin-left: 10%;
+    margin-right: 20%;
+    margin-left: -5%;
     font-size: 16px;
-    text-align: justify;
 }
+
+  #exhibition-center {
+      margin-right: 20%;
+      margin-left: 10%;
+  }
 
 .sep {
     height: 2px;
@@ -129,20 +133,6 @@
 
 
 /* @media section */
-
-@media(max-width: 1024px) {
-
-  /* tagging column */
-  .modal-body {
-      margin-right: 20%;
-      margin-left: -5%;
-  }
-
-  #exhibition-center {
-      margin-right: 20%;
-      margin-left: 10%;
-  }
-}
 
 @media(max-width: 991px) {
 
@@ -192,9 +182,6 @@
         margin-left: 10%;
     }
 
-    .sep {
-        margin-left: 0;
-    }
 }
 
 @media(max-width: 767px) {
@@ -228,5 +215,25 @@
     /*general modal info*/
     .modal-window {
         height: 100vh;
+    }
+
+    /* tagging column */
+    .modal-body {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #exhibition-center {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .sep {
+        margin-left: -10px;
+    }
+
+    /* wrapper for slides */
+    .carousel-inner>.item>a>img,.carousel-inner>.item>img,.img-responsive,.thumbnail a>img,.thumbnail>img {
+        width: 135%;
     }
 }
