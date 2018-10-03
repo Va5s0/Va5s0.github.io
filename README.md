@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-#### [☛ vassogkagka.com](http://vassogkagka.com/)
+#### [☛ vassog.com](http://vassog.com/)
 
 ## About
 
